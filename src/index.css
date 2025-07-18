@@ -169,6 +169,8 @@
   .scroll-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    
+
   }
   .scroll-hide::-webkit-scrollbar {
     display: none;
@@ -221,6 +223,6 @@
   }
 
   .pricing-plan_even {
-    @apply  bg-gradient-to-b from-[#1b275a] to-[#0e1434] even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
+    @apply  bg-gradient-to-b from-[#1b275a] to-[#0e1434]  even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
   }
 }

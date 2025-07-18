@@ -8,8 +8,8 @@ function App() {
  
   return (
 <main className="overflow-hidden">
-  <Header/>
-  <Hero/>
+  <Header />
+  <Hero className='bg-s1'/>
   <Features/>
   <Pricing/>
 </main>
