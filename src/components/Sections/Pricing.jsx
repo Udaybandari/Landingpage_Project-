@@ -12,7 +12,7 @@ const Pricing = () => {
     <section>
       <Element name="pricing">
         <div className="container ">
-         <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16 ">
+         <div className="max-w-960  border-s3 pricing-head_before relative mx-auto border-l border-r  bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16 ">
           <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm ">
             Flexible pricing for teams of all sizes
           </h3>
@@ -35,7 +35,7 @@ const Pricing = () => {
                   !monthly && "translate-x-full",
                 )}/>
           </div>
-          <div className="pricing-bg">
+          <div className="pricing-bg ">
              <img
                 src="/images/bg-outlines.svg"
                 width={960}
@@ -53,11 +53,11 @@ const Pricing = () => {
           </div>
          </div>
          
-        <div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
+        <div className="scroll-hide   relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6">
          {plans.map((plan,index)=>(
-         <div className=" pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative  p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]">
+         <div key={plan.id} className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]">
             {index === 1 && (
-                  <div className="g4  absolute h-330 left-0 right-0 top-0 z-1 rounded-tl-3xl rounded-tr-3xl" />
+                  <div className="g3  absolute h-90 left-0 right-0 top-0 z-1 rounded-tl-3xl rounded-tr-3xl" />
                 )}
                 {/* {image} */}
                   <div
@@ -107,6 +107,7 @@ const Pricing = () => {
                       / mo
                     </div>
                   </div>
+                  </div>
                     <div
                   className={clsx(
                     "body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4",
@@ -141,7 +142,7 @@ const Pricing = () => {
                 )}
 
             </div>
-          </div>
+        
          ))}
         </div>
          </div>
