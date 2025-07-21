@@ -9,7 +9,7 @@ const FaqItem = ({ item, index }) => {
   const active = activeId === item.id;
 
   return (
-    <div className="relative z-2 mb-16">
+    <div className="relative z-2 mb-16 ">
       <div
         className="group relative flex cursor-pointer items-center justify-between gap-10 px-7"
         onClick={() => {
