@@ -1,4 +1,5 @@
 
+import Download from "./components/Sections/Download"
 import Faqs from "./components/Sections/Faqs"
 import Features from "./components/Sections/Features"
 import Header from "./components/Sections/Header"
@@ -17,6 +18,7 @@ function App() {
   <Pricing/>
    <Faqs/>
    <Testimonials/>
+   <Download/>
 </main>
   )
 }
